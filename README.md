@@ -1,2 +1,1 @@
-# Team-Lost-Media.github.io
-team lost media website
+team lost media placeholder website
