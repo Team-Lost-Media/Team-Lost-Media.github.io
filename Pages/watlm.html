@@ -2,16 +2,12 @@
 <html>
 	<head>
 		<title>WATLM</title>
+		<link rel="icon" type="image/x-icon" href="../Assets/GameIcon_watlm.ico">
 	</head>
 <body>
 	<head>
 		<style>
 			
-
-			@font-face {
-				font-family: mgRising;
-				src: url("../Fonts/mg-rising.ttf");
-			}
 			
 			@font-face {
 				font-family: THSpatial;
@@ -25,16 +21,55 @@
 			}
 			
 			
-			.container {
-				background: rgba(0,0,0,0.56);
+			.container-center {
+				
 				border-radius: 10px;
 				margin-left: 500px;
 				margin-right: 500px;
+				background-image: url("../Assets/sub_bg_loop_4.png");
+			}
+			
+			.container-left {
+				background-image: url("../Assets/sub_bg_loop_4.png");
+				border-radius: 10px;
+				margin-left: 100px;
+				margin-right: 900px;
+			}
+
+			.container-right {
+				background-image: url("../Assets/sub_bg_loop_4.png");
+				border-radius: 10px;
+				margin-left: 900px;
+				margin-right: 100px;
+			}
+			
+			.container-header {
+				background-image: url("../Assets/sub_bg_loop_4.png");
+				padding: 0px;
+				height: 100px;
+			}
+			
+			.text-header {
+				color: white;
+				font-size: 25px;
+				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				text-align: center;
+				line-height: 100px;
+			}
+			
+			.link-header {
+				color:rgba(153,151,197,1.00);
+				font-size: 20px;
+				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				line-height: 100px;
+				float: right; 
+				padding-left: 15px;
+				padding-right: 15px;
 			}
 			
 			
 			body {
-				background-image: url("../Assets/main_bg_loop.png")
+				background-image: url("../Assets/main_bg_loop_anim.gif")
 			}
 			
 			h1 {
@@ -54,35 +89,70 @@
 			
 		</style>
 	</head>
-	
+	<header>
+		
+		<div class = "container-header">
+			
+			<span class = "text-header" style = "padding-left: 25px">
+			Wega And The Lost Media
+		</span>
+			
+			<a class = "link-header" href="watlm.html">Socials</a>
+			<a class = "link-header" href="watlm.html">FAQ</a>
+			<a class = "link-header" href="watlm.html">Download</a>
+			<a class = "link-header" href="watlm.html">Home</a>
+			
+			
+		</div>
+		
+	</header>
 
 	<img src = "../Assets/watlm_logo_2xscale.png" alt = "Team Lost Media Logo" class = "center">
 	
 	
-	<div class = "container">
+	<div class = "container-center">
 		
 		<div>
 			<h1>Have You Ever Wanted Movies Free?</h1>
 			<p>
-				<b>Wega And The Lost Media</b> is an in development shitpost 2D Platformer that follows the iconic Luigi and Mario recolors Wega and Urio, and their quest to stop the evil Maltigi from making their world LOST MEDIA! and shoe bench.
+				<b>Wega And The Lost Media</b> is an in development shitpost 2D Platformer that follows the iconic Luigi and Mario recolors Wega and Urio, and their quest to stop the evil Maltigi from making their world LOST MEDIA!
 			</p>
 			<p>
 				The game will contain 8 chapters of content, 4 weapons for you to break out of bounds with, a soundtrack that's probably better than this game deserves, and shoe bench. 
 			</p>
 			
+			<img 
+				 src="../Assets/wegaandurio_platform.png" alt = "wega and urio on a platform" style = "padding-bottom: 25px;" class = "center"
+			>
+		</div>
+	</div>
+
+	<div class = "container-left">
+		
+		<div>
 			<h1>Story</h1>
 			<p>
-				One day, after discussing their latest attempt to sell Frees Movies, Wega and Urio were interupted by Maltigi breaking in to steal them all! Now its up to the Movie Free bros to save their media, and the world! and shoe bench.
+				One day, after discussing their latest attempt to sell Frees Movies, Wega and Urio were interupted by Maltigi breaking in to steal them all! Now its up to the Movie Free bros to save their media, and the world!
 			</p>
 			<p>
-				Along the way, you'll meet unique characters and explore strange locations, from an empire run by people named Todd, to an island obsessed with the retro 80's, Wega and Urio will have to jump, dive, and hammer-swing their way into finding the lost media! and shoe bench.
+				Along the way, you'll meet unique characters and explore strange locations, from an empire run by people named Todd, to an island obsessed with the retro 80's, Wega and Urio will have to jump, dive, and hammer-swing their way into finding the lost media!
 			</p>
+			<img 
+				 src="../Assets/Screenshots/watlm/worldmapPLACEHOLDER.png" alt = "placeholder screenshot" style = "width: 500px; padding-bottom: 25px;" class = "center"
+			>
 		</div>
 		
+	</div>
 
+	<div class = "container-right">
+		
+		<div>
+			<h1>Screenshots</h1>
+			<img 
+				 src="../Assets/Screenshots/watlm/worldmapPLACEHOLDER.png" alt = "placeholder screenshot" style = "width: 500px; padding-bottom: 25px;" class = "center"
+			>
+		</div>
 		
 	</div>
-	
-
 </body>
 </html>
