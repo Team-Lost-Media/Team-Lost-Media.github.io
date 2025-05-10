@@ -18,29 +18,56 @@
 				display: block;
 				margin-left: auto;
 				margin-right: auto;
+				position: relative;
+			}
+			
+			.center_title_image {
+				display: block;
+				left: 30%;
+				position:absolute;
+			}
+			.center_title_text {
+				display: block;
+				left: 41%;
+				margin-top: 450px;
+				position:absolute;
+				color: white;
+				text-align: center;
+				font-family: THSpatial;
+				font-size: 50px;
+			}
+			
+			.container-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: flex-end;
+				gap: 1em;
+				width: fit-content;
+				margin: auto;
 			}
 			
 			
 			.container-center {
 				
 				border-radius: 10px;
-				margin-left: 500px;
-				margin-right: 500px;
+				margin-left: 20%;
+				margin-right: 20%;
 				background-image: url("../Assets/sub_bg_loop_4.png");
 			}
 			
 			.container-left {
 				background-image: url("../Assets/sub_bg_loop_4.png");
 				border-radius: 10px;
-				margin-left: 100px;
-				margin-right: 900px;
+				margin-left: 0%;
+				margin-right: 50%;
 			}
 
 			.container-right {
 				background-image: url("../Assets/sub_bg_loop_4.png");
 				border-radius: 10px;
-				margin-left: 900px;
-				margin-right: 100px;
+				margin-left: 50%;
+				margin-right: 0%;
 			}
 			
 			.container-header {
@@ -58,7 +85,7 @@
 			}
 			
 			.link-header {
-				color:rgba(153,151,197,1.00);
+				color:#9B0099;
 				font-size: 20px;
 				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 				line-height: 100px;
@@ -67,7 +94,68 @@
 				padding-right: 15px;
 			}
 			
+			.link-footer {
+				color:#9B0099;
+				font-size: 20px;
+				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				line-height: 20px;
+				float: auto; 
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-left: 20%;
+
+			}
 			
+			.scroll {
+				position: relative;
+				overflow: hidden;
+				z-index: -1;
+				margin: 0;
+				padding: 0;
+				width: 600vw;
+			}
+
+			.m-scroll {
+				overflow: hidden;
+				height: 100%;
+				white-space: nowrap;
+				animation: scrollText 60s infinite linear;
+				margin: 0;
+				margin-top: 50px;
+				margin-bottom: 50px;
+				font-size: 0;
+				display: flex;
+				justify-content: space-between;
+				width: fit-content;
+			}
+			
+			.scroll_image {
+				filter: brightness(75%);
+				overflow: hidden;
+				}
+			
+			
+			section {
+				width: 100%;
+				overflow: hidden;
+			}
+			
+			span {
+			  display: inline-block;
+			  margin: 0;
+			  padding: 0;
+			  color: white;
+			}
+
+			@keyframes scrollText {
+			  from {
+				transform: translateX(0%);
+			  }
+			  to {
+				transform: translateX(-77%);
+			  }
+			}
+
 			body {
 				background-image: url("../Assets/main_bg_loop_anim.gif")
 			}
@@ -97,39 +185,77 @@
 			Wega And The Lost Media
 		</span>
 			
-			<a class = "link-header" href="watlm.html">Socials</a>
-			<a class = "link-header" href="watlm.html">FAQ</a>
-			<a class = "link-header" href="watlm.html">Download</a>
-			<a class = "link-header" href="watlm.html">Home</a>
+			<a class = "link-header" href="#Socials_section">Socials</a>
+			<a class = "link-header" href="#FAQ_section">FAQ</a>
+			<a class = "link-header" href="#Downloads_section">Download</a>
+			<a class = "link-header" href="#About_section">About</a>
 			
 			
 		</div>
 		
 	</header>
-
-	<img src = "../Assets/watlm_logo_2xscale.png" alt = "Team Lost Media Logo" class = "center">
+	<img src = "../Assets/watlm_logo_2xscale.png" alt = "Team Lost Media Logo" class = "center_title_image" >
 	
+<section>
+	<p class = "center_title_text">In Development</p>
+	<div class="scroll">
+		
+	  <div class="m-scroll">
+		  
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmeadows_jump.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmeadows_trees.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmines_damage.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmines_drill.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmines_drilling.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/rrailway_walk.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/worldmapPLACEHOLDER.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/sshowdown_walk.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/sshowdown_statues.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/sshowdown_parry.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmeadows_jump.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmeadows_trees.png" width="100%" class="scroll_image" >
+		  </span>
+		<span>
+			<img src="../Assets/Screenshots/watlm/mmines_damage.png" width="100%" class="scroll_image" >
+		  </span>
+		  
+	  </div>
+	</div>
+</section>
 	
 	<div class = "container-center">
 		
-		<div>
+		<div id="About_section">
 			<h1>Have You Ever Wanted Movies Free?</h1>
 			<p>
 				<b>Wega And The Lost Media</b> is an in development shitpost 2D Platformer that follows the iconic Luigi and Mario recolors Wega and Urio, and their quest to stop the evil Maltigi from making their world LOST MEDIA!
-			</p>
-			<p>
+				<br>
 				The game will contain 8 chapters of content, 4 weapons for you to break out of bounds with, a soundtrack that's probably better than this game deserves, and shoe bench. 
 			</p>
 			
-			<img 
-				 src="../Assets/wegaandurio_platform.png" alt = "wega and urio on a platform" style = "padding-bottom: 25px;" class = "center"
-			>
-		</div>
-	</div>
-
-	<div class = "container-left">
-		
-		<div>
 			<h1>Story</h1>
 			<p>
 				One day, after discussing their latest attempt to sell Frees Movies, Wega and Urio were interupted by Maltigi breaking in to steal them all! Now its up to the Movie Free bros to save their media, and the world!
@@ -141,18 +267,62 @@
 				 src="../Assets/Screenshots/watlm/worldmapPLACEHOLDER.png" alt = "placeholder screenshot" style = "width: 500px; padding-bottom: 25px;" class = "center"
 			>
 		</div>
-		
 	</div>
 
 	<div class = "container-right">
 		
-		<div>
-			<h1>Screenshots</h1>
-			<img 
-				 src="../Assets/Screenshots/watlm/worldmapPLACEHOLDER.png" alt = "placeholder screenshot" style = "width: 500px; padding-bottom: 25px;" class = "center"
-			>
+		<div id="FAQ_section">
+			<h1>FAQ</h1>
+			<p>
+				<b>Is Nintendo going to take this down?</b> <br> 
+				Nintendo only takes down for-profit fangames or remakes of existing games. 
+				WATLM is non-profit and fully original!
+				
+				<br><br>
+				
+				<b>What is a "Wega"?</b> <br> 
+				Wega is a hue shifted PNG of the Luigi's Mansion render of Luigi screaming. 
+				<a href="https://knowyourmeme.com/memes/wega">More Info.</a>
+				
+				<br><br>
+				
+				<b>Is the game out yet?</b> <br> 
+				Not yet! But the first demo is just around the corner! 
+				<br><br>
+				
+				<b>When is the full game coming out?</b> <br> 
+				When we finish it!
+				
+				<br><br>
+				
+				<b>No, really, when is the game coming out?</b> <br> 
+				be patient god damn!!!
+			</p>
 		</div>
 		
 	</div>
+	
+	<div class = "container-left">
+		<div id="Downloads_section">
+			<h1>Downloads</h1>
+			<p>
+				Nothing yet! Come back soon...
+			</p>
+		</div>
+	</div>
+	
+	<footer>
+		<div class = "container-header" id="Socials_section">
+			<p>
+				Wega and The Lost Media is a fan project utilizing many Nintendo assets. Wega and The Lost Media, as well as Team Lost Media, are not affiliated with Nintendo in any way. This is just a fan project for no monetary gain.
+			</p>
+			
+			<a class = "link-footer" href="https://discord.gg/GMAc2BqYZR">Discord</a>
+			<a class = "link-footer" href="https://www.youtube.com/channel/UCQEw-W3S_nm4x6z4UjnwD0A">Youtube</a>
+			<a class = "link-footer" href="https://x.com/teamlostmedia">Twitter</a>
+			
+		</div>
+	</footer>
+	
 </body>
 </html>
