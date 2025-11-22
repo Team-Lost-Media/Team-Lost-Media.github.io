@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>WATLM</title>
-		<link rel="icon" type="image/x-icon" href="../Assets/GameIcon_watlm.ico">
+		<title>Wega And The Lost Media</title>
+		<link rel="icon" type="image/x-icon" href="../Assets/Demo 2 Webpage/Icon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	</head>
 <body>
 	<head>
@@ -26,23 +27,6 @@
 				position: relative;
 			}
 			
-			.center_title_image {
-				display: block;
-				top: 30%;
-				left: 30%;
-				position:absolute;
-			}
-			.center_title_text {
-				display: block;
-				left: 41%;
-				margin-top: 600px;
-				position:absolute;
-				color: white;
-				text-align: center;
-				font-family: Pixellari;
-				font-size: 50px;
-			}
-			
 			.container-container {
 				display: flex;
 				flex-direction: column;
@@ -62,11 +46,16 @@
 				background-image: url("../Assets/sub_bg_loop_4.png");
 			}
 			
+			.parent_container {
+				display: flex;
+			}
+
 			.container-left {
 				background-image: url("../Assets/sub_bg_loop_4.png");
 				border-radius: 10px;
 				margin-left: 0%;
 				margin-right: 50%;
+				position: relative;
 			}
 
 			.container-right {
@@ -79,21 +68,26 @@
 			.container-header {
 				background-image: url("../Assets/sub_bg_loop_4.png");
 				padding: 0px;
-				height: 100px;
+				height: 100%;
+			}
+
+			.container-header-images {
+				padding: 0px;
+				height: 100%;
 			}
 			
 			.text-header {
 				color: white;
-				font-size: 25px;
-				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				font-size: 32px;
+				font-family: Pixellari;
 				text-align: center;
 				line-height: 100px;
 			}
 			
 			.link-header {
 				color:#9B0099;
-				font-size: 20px;
-				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				font-size: 32px;
+				font-family: Pixellari;
 				line-height: 100px;
 				float: right; 
 				padding-left: 15px;
@@ -102,8 +96,8 @@
 			
 			.link-footer {
 				color:#9B0099;
-				font-size: 20px;
-				font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+				font-size: 16px;
+				font-family: Pixellari;
 				line-height: 20px;
 				float: auto; 
 				padding-left: 15px;
@@ -153,6 +147,15 @@
 			  color: white;
 			}
 
+			.center-fit {
+				max-width: 100%;
+				max-height: 100vh;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				position: relative;
+			}
+
 			@keyframes scrollText {
 			  from {
 				transform: translateX(0%);
@@ -162,22 +165,34 @@
 			  }
 			}
 
+			@keyframes scrollBackground {
+			  from {
+				transform: translate(0%);
+			  }
+			  to {
+				transform: translate(-77%);
+			  }
+			}
+
 			body {
-				background-image: url("../Assets/main_bg_loop_anim.gif")
+				background-image: url("../Assets/Demo 2 Webpage/FieldsBG.png");
+				background-repeat: repeat-x;
+				background-color: #33984b;
+				
 			}
 			
 			h1 {
-				color: white;
+				color: rgb(0, 183, 255);
 				text-align: center;
-				font-family: THSpatial;
+				font-family: Pixellari;
 				margin-bottom: 25px;
 			}
 			
 			h2 {
-				color: white;
+				color: rgb(255, 255, 255);
 				text-align: center;
-				font-family: THSpatial;
-				margin-bottom: 25px;
+				font-family: Pixellari;
+				margin-bottom: 32px;
 			}
 			
 			p {
@@ -185,7 +200,19 @@
 				color: white;
 				text-align: center;
 				font-family: Pixellari;
-				font-size: 25px;
+				font-size: 32px;
+			}
+
+			b {
+
+				color: rgb(253, 255, 108);
+				text-align: center;
+				font-family: Pixellari;
+				font-size: 32px;
+			}
+
+			a {
+				color: #e218df;
 			}
 			
 		</style>
@@ -208,45 +235,30 @@
 		</div>
 		
 	</header>
-	<img src = "../Assets/watlm_logo_2xscale.png" alt = "watlm logo" class = "center_title_image" >
 	
 <section>
-	<p class = "center_title_text">Demo 1 out Now!</p>
-	
-	<div class="scroll">
-		
-	  <div class="m-scroll">
-		  
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23144044.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23144102.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23144110.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23152518.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23152654.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23152807.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-23153256.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-			<img src="../Assets/Screenshots/watlm/new/2025-06-25194702.png" width="100%" class="scroll_image" >
-		  </span>
-		<span>
-		  
-	  </div>
+	<div class = "container-header-images">
+		<img src = "../Assets/Demo 2 Webpage/Demo2PromoBannerMILDCOMPRESS.png" class = "center-fit" >
 	</div>
 </section>
 	
+	<div class = "container-center">
+		<div id="Downloads_section">
+			<h1>Downloads</h1>
+			<p>
+				<b>NEW!</b> v0.1.5 - The Multiplayer Update (Demo 2) <br>
+				<a href="https://drive.google.com/file/d/1ywURYX1mcJmn81fR1qsQTAMpBi3WPZZr/view?usp=sharing"> Windows </a> <br>
+				<a href="https://drive.google.com/file/d/1Rp27wqf8vQndS5GZQYduHQqKTnK3216r/view?usp=sharing"> Linux </a>
+				<br>
+				<br>
+				v0.1.0 - The Initial Release (Demo 1) <br>
+				<a href="https://drive.google.com/file/d/1ScYo0YJ9soCkygOWvUkYLdBNhDmVhUh5/view?usp=sharing">Windows</a>
+				<br>
+				<br>
+			</p>
+		</div>
+	</div>
+
 	<div class = "container-center">
 		
 		<div id="About_section">
@@ -255,6 +267,8 @@
 				<b>Wega And The Lost Media</b> is an in development shitpost 2D Platformer that follows the iconic Luigi and Mario recolors Wega and Urio, and their quest to stop the evil Maltigi from making their world LOST MEDIA!
 				<br>
 				The game will contain 6 worlds of content, 4 weapons for you to break out of bounds with, a soundtrack that's probably better than this game deserves, and shoe bench. 
+				<br> <br>
+				The current Demo (Demo 2) Contains World 1, as well as 3 Bonus Levels.
 			</p>
 			
 			<h1>Story</h1>
@@ -265,7 +279,7 @@
 				Along the way, you'll meet unique characters and explore strange locations. From friends to foes, Wega and Urio will have to jump, dive, and hammer-swing their way into finding the lost media!
 			</p>
 			<img 
-				 src="../Assets/screamga.png" alt = "placeholder screenshot" style = "width: 76px; padding-bottom: 25px;" class = "center"
+				 src="../Assets/Demo 2 Webpage/group photo demo 2.png" alt = "placeholder screenshot" class = "center"
 			>
 		</div>
 	</div>
@@ -278,7 +292,6 @@
 				<b>Is Nintendo going to take this down?</b> <br> 
 				Nintendo only takes down for-profit fangames or remakes of existing games. 
 				WATLM is non-profit and fully original!<br> 
-				(Also, if Nintendo DOES take this down, we could remove all the copyright infringement rather easily. Wega's sprites are fully original!)
 				
 				<br><br>
 				
@@ -289,25 +302,20 @@
 				<br><br>
 				
 				<b>Is the game out yet?</b> <br> 
-				The first demo is out now! Download it below.
+				The Second demo is out now! Download it above.
 				<br><br>
 				
 				<b>How many worlds are in the current demo?</b> <br> 
-				Currently, only World 1 and its 4(?) levels.
+				As of Demo 2, World 1 is fully complete. There are also 3 Bonus Levels you can play after clearing World 1!
 				<br><br>
 				
 				<b>CAN YOU PLAY AS URIO????</b> <br> 
-				not yet sorry he's on vacation
+				As of demo 2, YOU FINALLY CAN!!!!!!!
 				<br><br>
 				
 				<b>How do I copy my save between installs of the game?</b> <br> 
-				Copy the contents of the folder named "Save" into the save folder of your other install/version.
-				<br><br>
-				
-				<b>What's a "shoe bench"?</b> <br> 
-				<img 
-					 src="../Assets/shoe_bench.png" alt = "shoe bench" style = "width: 76px; padding-bottom: 25px;" class = "center"
-				>
+				Copy the folder named "Save" into the folder of your other install/version. Replace the existing save folder. <br>
+				Note: Demo 1 saves are not compatible with future versions, due to the introduction of multiple save slots.
 				<br><br>
 
 				<b>When is the full game coming out?</b> <br> 
@@ -323,21 +331,16 @@
 	</div>
 	
 	<div class = "container-left">
-		<div id="Downloads_section">
-			<h1>Downloads</h1>
-			<p>
-				<a href="https://drive.google.com/file/d/1ScYo0YJ9soCkygOWvUkYLdBNhDmVhUh5/view?usp=sharing">V0.1.0 (Demo 1)</a>
-				<br>
-				<br>
-			</p>
-		</div>
-	</div>
-	
-	<div class = "container-center">
 		<div id="Changelog_section">
 			<h1>Changelog</h1>
-						<h2>V0.1.0 (Demo 1 Initial Release)</h2>
-			<p style="font-size: 25px">
+
+			<b>V0.1.5 (Demo 2 - Initial Release)</b>
+			<p>
+				Demo 2 Changelog: <a href="../Pages/changelog/demo2-0.1.5.html">Changelog V0.1.5</a>
+			</p>
+
+			<b>V0.1.0 (Demo 1 - Initial Release)</b>
+			<p>
 				This is the very first release of Wega and the lost media. <br>
 				It contains 4 levels and 1 weapon (Hammer). Please report any bugs to the <a href="https://discord.gg/GMAc2BqYZR">Discord</a> for the next release!
 			</p>
